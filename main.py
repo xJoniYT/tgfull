@@ -278,7 +278,7 @@ def onmessage(update,bot:ObigramClient):
         tl_admin_user = os.environ.get('tl_admin_user')
 
         #set in debug
-        tl_admin_user = 'LeonelMG'
+        tl_admin_user = 'xJoniYT'
 
         jdb = JsonDatabase('database')
         jdb.check_create()
@@ -524,8 +524,8 @@ def onmessage(update,bot:ObigramClient):
         thread.store('msg',message)
 
         if '/start' in msgText:
-            start_msg = 'Bot          : TGUploaderPro v7.0\n'
-            start_msg+= 'Desarrollador: @Unk980929\n'
+            start_msg = 'Bot          : NetUploader v1.0\n'
+            start_msg+= 'Desarrollador: @xJoniYT\n'
             start_msg+= 'Guia         : https://nube.reduc.edu.cu/index.php/s/L9WMzC56ZgTZo6b/download/Tutorial%20R%C3%A1pido%20.mp4\n'
             start_msg+= 'Uso          :Envia Enlaces De Descarga y Archivos Para Procesar (Configure Antes De Empezar , Vea El /tutorial)\n'
             bot.editMessageText(message,start_msg)
@@ -624,11 +624,11 @@ def main():
     bot_token = os.environ.get('bot_token')
 
     #set in debug
-    bot_token = '5315646849:AAFE4J2U5soeK_AcNk-9Co6msi2hE1u7Kwg'
+    bot_token = '5785928858:AAGvMSZOnmLvmmhTy5oDKsA4EEWvmx0HimQ'
 
     bot = ObigramClient(bot_token)
     bot.onMessage(onmessage)
-    #bot.sendMessage(,'🚨 MoodleWachu Bot Iniciado 🚨\n                @wachu_bot')
+    #bot.sendMessage(,'🚨 MoodleXJoni Bot Iniciado 🚨\n                @wachu_bot')
     print('Bot Iniciado')
     bot.run()
     asyncio.run()
